@@ -8,7 +8,7 @@ Created on Thu Mar 12 00:15:15 2020
 import cv2
 import numpy as np
 
-img = cv2.imread('Meew.jpg')
+img = cv2.imread('Meew.jpg') #image source
 retval, threshold = cv2.threshold(img, 12, 255, cv2.THRESH_BINARY)
 grayscaled = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 retval, threshold1 = cv2.threshold(grayscaled, 10, 255, cv2.THRESH_BINARY)
